@@ -1,9 +1,10 @@
 import Layout, { Row, Main, Container } from 'components/layouts/WideStretched'
 import Header from 'components/headers/Underline'
+//import Image from 'next/image'
 
 export default function Index() {
   return (
-    <Layout className="bg-gray-50 text-gray-800 dark:bg-gray-800 dark:text-white transition-colors duration-200">
+    <Layout className="text-gray-800 transition-colors duration-200 bg-gray-50 dark:bg-gray-800 dark:text-white">
       <Row>
         <Container>
           <Header />
@@ -11,16 +12,33 @@ export default function Index() {
       </Row>
       <Main>
         <Container>
-          <div className="px-4 py-6 sm:px-0">
-            <div className="border-4 border-dashed border-gray-200 rounded-lg h-96 p-12">
-              About this app...
+          <div className="py-9 sm:px-12 md:text-3xl">
+            <div >
+              Novel is a social ebook reader for Urbit ships and Pilots
+              <br></br>
+              <br></br>
+              Hackers:
+              <br></br>
+              ~lomseg-laclut
+              <br></br>
+              "raygun"~dirmyn-raglun
+              <br></br>
+              ~hodreb-racdem
+              <br></br>
+              <br></br>
+              <a
+                href='web+urbitgraph://group/~lomseg-laclut/novel'
+                className='font-bold underline'
+              >
+                Novel Group on Urbit
+              </a>
             </div>
           </div>
         </Container>
       </Main>
-      <Row className="border-t border-gray-300 bg-gray-200 text-gray-600">
+      <Row className="text-gray-800 bg-gray-400 border-t border-gray-300">
         <Container>
-          Footer
+          Assembly 2022 Hackathon
         </Container>
       </Row>
     </Layout>

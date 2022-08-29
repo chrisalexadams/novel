@@ -1,4 +1,4 @@
 module.exports = {
-  basePath: '/apps/myappname'
+  basePath: '/apps/novel'
 }
 
